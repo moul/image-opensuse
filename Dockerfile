@@ -17,9 +17,9 @@ RUN zypper -n -v refresh \
 
 # Make the image smaller
 # kernel, drivers, firmwares
-RUN zypper rm -n kernel-default kernel-firmware
+RUN zypper -n rm kernel-default kernel-firmware
 # services
-RUN zypper rm -n libmozjs-17_0 bluez cracklib-dict-full
+RUN zypper -n rm libmozjs-17_0 bluez cracklib-dict-full
 
 
 # Install packages
@@ -35,7 +35,7 @@ RUN zypper -n install \
 
 # xnbd-client
 RUN wget https://github.com/scaleway/image-opensuse/raw/master/packages/xnbd-client/RPMS/armv7hl/xnbd-client-0.3.0-1.armv7hl.rpm \
- && zypper install -n ./xnbd-client-0.3.0-1.armv7hl.rpm \
+ && zypper -n install ./xnbd-client-0.3.0-1.armv7hl.rpm \
  && rm -f xnbd-client-0.3.0-1.armv7hl.rpm \
  && ldconfig
 
