@@ -36,7 +36,8 @@ RUN zypper -n install \
 # xnbd-client
 RUN wget https://github.com/scaleway/image-opensuse/raw/master/packages/xnbd-client/RPMS/armv7hl/xnbd-client-0.3.0-1.armv7hl.rpm \
  && zypper install -n ./xnbd-client-0.3.0-1.armv7hl.rpm \
- && rm -f xnbd-client-0.3.0-1.armv7hl.rpm
+ && rm -f xnbd-client-0.3.0-1.armv7hl.rpm \
+ && ldconfig
 
 
 # Locale
