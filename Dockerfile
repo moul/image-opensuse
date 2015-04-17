@@ -49,7 +49,7 @@ ADD ./patches/etc/ /etc/
 ADD ./patches/usr/ /usr/
 
 
-RUN systemctl enable oc-ssh-keys
+RUN systemctl enable oc-ssh-keys oc-add-extra-volumes
 
 
 # Remove root password
@@ -65,7 +65,6 @@ RUN systemctl mask systemd-modules-load.service \
  && systemctl mask systemd-update-utmp-runlevel \
  && systemctl mask proc-sys-fs-binfmt_misc.automount \
  && systemctl mask systemd-random-seed.service
-
 
 RUN systemctl set-default multi-user
 RUN systemctl disable wpa_supplicant
