@@ -11,7 +11,7 @@ ENV SCW_BASE_IMAGE armbuild/scw-distrib-opensuse:13.2
 RUN zypper -n -v refresh \
  && zypper -n update \
  && zypper -n install curl \
- && curl -Lq http://j.mp/scw-skeleton | FLAVORS=common,docker-based bash -e \
+ && curl -Lq http://j.mp/scw-skeleton | FLAVORS=common,docker-based,systemd bash -e \
  && /usr/local/sbin/builder-enter
 
 
