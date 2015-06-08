@@ -50,7 +50,11 @@ ADD ./patches/etc/ /etc/
 ADD ./patches/usr/ /usr/
 
 
-RUN systemctl enable oc-ssh-keys oc-add-extra-volumes oc-sync-kernel-modules
+RUN systemctl enable \
+	oc-generate-ssh-keys \
+	oc-fetch-ssh-keys \
+	oc-add-extra-volumes \
+	oc-sync-kernel-modules
 
 
 # Remove root password
