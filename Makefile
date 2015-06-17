@@ -1,9 +1,9 @@
 DOCKER_NAMESPACE =	armbuild/
 NAME =			scw-distrib-opensuse
 VERSION =		13.2
-VERSION_ALIASES =	latest
-TITLE =			Opensuse 13.2
-DESCRIPTION =		Opensuse 13.2
+VERSION_ALIASES =	Harlequin latest
+TITLE =			openSUSE 13.2
+DESCRIPTION =		openSUSE 13.2 (Harlequin)
 SOURCE_URL =		https://github.com/scaleway/image-opensuse
 
 

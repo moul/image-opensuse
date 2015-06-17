@@ -1,7 +1,7 @@
-OpenSUSE image on Scaleway [![Build Status](https://travis-ci.org/scaleway/image-opensuse.svg?branch=master)](https://travis-ci.org/scaleway/image-opensuse)
+openSUSE image on Scaleway [![Build Status](https://travis-ci.org/scaleway/image-opensuse.svg?branch=master)](https://travis-ci.org/scaleway/image-opensuse)
 ==========================
 
-Scripts to build the official Opensuse image on Scaleway
+Scripts to build the official openSUSE image on Scaleway
 
 This image is built using [Image Tools](https://github.com/scaleway/image-tools) and depends on the [armbuild/opensuse-disk](https://registry.hub.docker.com/u/armbuild/opensuse-disk/) Docker image.
 
